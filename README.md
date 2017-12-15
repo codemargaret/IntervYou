@@ -5,6 +5,7 @@
 #### By _**Margaret Berry**_
 
 ## Description
+![Database Schema](./db_design.png?raw=true "Database Schema Design")
 
 ## Project Goals
 
