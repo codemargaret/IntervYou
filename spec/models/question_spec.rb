@@ -1,5 +1,13 @@
 require 'rails_helper'
 
-RSpec.describe Question, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+describe Question, 'association' do
+  it { should belong_to :user }
+  it { should have_many :answers }
+end
+
+describe Question, 'column_specification' do
+  it { should have_db_column(:text).of_type(:text) }
+  it { should have_db_column(:user_id).of_type(:integer) }
+  it { should have_db_column(:created_at).of_type(:datetime) }
+  it { should have_db_column(:updated_at).of_type(:datetime) }
 end
