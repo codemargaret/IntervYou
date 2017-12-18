@@ -7,7 +7,9 @@ class QuestionsController < ApplicationController
   end
 
   def show
+    binding.pry
     @question = Question.find(params[:id])
+
     json_response(@question)
   end
 
@@ -37,6 +39,6 @@ class QuestionsController < ApplicationController
   private
 
   def question_params
-    params.permit(:user_id, :text)
+    params.permit(:id, :user_id, :text)
   end
 end
