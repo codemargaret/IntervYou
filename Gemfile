@@ -16,6 +16,7 @@ gem 'will_paginate', '~> 3.1.0'
 gem 'acts_as_votable', '~> 0.11.1'
 gem 'acts-as-taggable-on', '~> 4.0'
 gem 'rails_admin', '~> 1.2'
+gem 'mailcatcher'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
