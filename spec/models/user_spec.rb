@@ -13,3 +13,10 @@ describe User, 'column_specification' do
   it { should have_db_column(:created_at).of_type(:datetime) }
   it { should have_db_column(:updated_at).of_type(:datetime) }
 end
+
+# describe User do
+#   it "sends an email when the user is created" do
+#     user = FactoryBot.create(:user)
+#     ActionMailer::Base.deliveries.last.to.should eq [user.email]
+#   end
+# end
