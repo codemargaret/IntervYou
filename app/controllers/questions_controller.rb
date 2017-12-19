@@ -7,9 +7,7 @@ class QuestionsController < ApplicationController
   end
 
   def show
-    binding.pry
     @question = Question.find(params[:id])
-
     json_response(@question)
   end
 
