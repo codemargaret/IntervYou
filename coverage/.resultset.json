@@ -494,14 +494,18 @@
       "/Users/margaretmcgovern/Desktop/projects/IntervYou/spec/factories/answers.rb": [
         1,
         1,
-        null,
+        1,
+        1,
+        1,
         null,
         null
       ],
       "/Users/margaretmcgovern/Desktop/projects/IntervYou/spec/factories/questions.rb": [
         1,
         1,
-        null,
+        1,
+        1,
+        1,
         null,
         null
       ],
@@ -514,12 +518,36 @@
         1,
         1,
         null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null,
+        null,
         null
       ],
       "/Users/margaretmcgovern/Desktop/projects/IntervYou/spec/controllers/questions_controller_spec.rb": [
         1,
         null,
         1,
+        null,
+        1,
+        3,
+        1,
+        null,
+        1,
+        null,
+        1,
+        0,
+        null,
+        null,
+        1,
+        0,
+        null,
         null,
         null
       ],
@@ -579,6 +607,6 @@
         null
       ]
     },
-    "timestamp": 1513622386
+    "timestamp": 1513666773
   }
 }
