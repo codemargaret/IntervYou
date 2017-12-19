@@ -489,6 +489,18 @@
         1,
         1,
         1,
+        1,
+        null
+      ],
+      "/Users/margaretmcgovern/Desktop/projects/IntervYou/app/models/question_tag.rb": [
+        1,
+        1,
+        1,
+        null
+      ],
+      "/Users/margaretmcgovern/Desktop/projects/IntervYou/app/models/tag.rb": [
+        1,
+        1,
         null
       ],
       "/Users/margaretmcgovern/Desktop/projects/IntervYou/spec/factories/answers.rb": [
@@ -518,13 +530,13 @@
         1,
         1,
         null,
-        1,
-        1,
-        1,
         null,
         null,
-        1,
-        0,
+        null,
+        null,
+        null,
+        null,
+        null,
         null,
         null,
         null,
@@ -535,18 +547,18 @@
         null,
         1,
         null,
-        1,
-        3,
-        1,
-        null,
-        1,
-        null,
-        1,
-        0,
         null,
         null,
-        1,
-        0,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
         null,
         null,
         null
@@ -607,6 +619,6 @@
         null
       ]
     },
-    "timestamp": 1513666773
+    "timestamp": 1513704693
   }
 }
