@@ -16,6 +16,10 @@ gem 'will_paginate', '~> 3.1.0'
 gem 'acts_as_votable', '~> 0.11.1'
 gem 'rails_admin', '~> 1.2'
 gem 'mailcatcher'
+gem 'responders'
+gem 'active_model_serializers'
+gem 'bower-rails'
+gem 'angular-rails-templates'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
