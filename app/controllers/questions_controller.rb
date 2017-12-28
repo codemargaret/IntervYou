@@ -1,5 +1,5 @@
 class QuestionsController < ApplicationController
-  # before_action :authenticate_user!, except: [ :index, :show ]
+  before_action :authenticate_user!, except: [ :index, :show ]
 
   def index
     @questions = Question.all
@@ -12,6 +12,7 @@ class QuestionsController < ApplicationController
   end
 
   def create
+    add_user_id_to_params
     @question = Question.create!(question_params)
     json_response(@question, :created)
   end
@@ -35,6 +36,10 @@ class QuestionsController < ApplicationController
   end
 
   private
+
+  def add_user_id_to_params
+    params[:user_id] = current_user.try(:id)
+  end
 
   def question_params
     params.permit(:id, :user_id, :text)
