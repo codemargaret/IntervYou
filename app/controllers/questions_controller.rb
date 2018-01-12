@@ -18,6 +18,7 @@ class QuestionsController < ApplicationController
   end
 
   def update
+    add_user_id_to_params
     @question = Question.find(params[:id])
     if @question.update!(question_params)
       render status: 200, json: {
