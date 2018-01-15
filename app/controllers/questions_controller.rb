@@ -28,6 +28,7 @@ class QuestionsController < ApplicationController
   end
 
   def destroy
+    add_user_id_to_params
     @question = Question.find(params[:id])
     if @question.destroy!
       render status: 200, json: {
