@@ -20,6 +20,7 @@ class AnswersController < ApplicationController
   end
 
   def update
+    add_user_id_to_params
     @answer = Answer.find(params[:id])
     if @answer.update!(answer_params)
       render status: 200, json: {
@@ -29,6 +30,7 @@ class AnswersController < ApplicationController
   end
 
   def destroy
+    add_user_id_to_params
     @answer = Answer.find(params[:id])
     if @answer.destroy!
       render status: 200, json: {
