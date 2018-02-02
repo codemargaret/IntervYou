@@ -1,6 +1,6 @@
 # _IntervYou Rails API_
 
-#### _A website that allows a user to practice technical interview questions, 12.21.2017_
+#### _A website that allows a user to practice technical interview questions, 02.02.2017_
 
 #### By _**Margaret Berry**_
 
@@ -11,7 +11,9 @@
 _My goal was to create a Rails API that would communicate with a separate Angular application._
 
 ## Setup/Installation Requirements
-_Run the following commands in Terminal:_
+_This database is hosted [here](http://nameless-oasis-87770.herokuapp.com/)._
+
+_To clone locally, run the following commands in Terminal:_
 
 1. `$ git clone` [this repository](https://github.com/codemargaret/IntervYou.git)
 2. `$ cd IntervYou`
