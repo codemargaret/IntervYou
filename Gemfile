@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+ruby "2.4.1"
 
 git_source(:github) do |repo_name|
   repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
@@ -15,7 +16,6 @@ gem 'devise_token_auth'
 gem 'will_paginate', '~> 3.1.0'
 gem 'acts_as_votable', '~> 0.11.1'
 gem 'rails_admin', '~> 1.2'
-gem 'mailcatcher'
 gem 'responders'
 gem 'active_model_serializers'
 gem 'bower-rails'
