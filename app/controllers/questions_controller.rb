@@ -18,9 +18,10 @@ class QuestionsController < ApplicationController
   end
 
   def update
-    add_user_id_to_params
     @question = Question.find(params[:id])
-    if @question.update!(question_params)
+    if @question.user_id === current_user.id
+      add_user_id_to_params
+      @question.update!(question_params)
       render status: 200, json: {
         message: "Your question has been updated."
       }
@@ -28,9 +29,9 @@ class QuestionsController < ApplicationController
   end
 
   def destroy
-    add_user_id_to_params
     @question = Question.find(params[:id])
-    if @question.destroy!
+    if @question.user_id === current_user.id
+      @question.destroy!
       render status: 200, json: {
         message: "Your question has been destroyed."
       }
