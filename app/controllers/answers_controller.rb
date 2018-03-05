@@ -20,9 +20,10 @@ class AnswersController < ApplicationController
   end
 
   def update
-    add_user_id_to_params
     @answer = Answer.find(params[:id])
-    if @answer.update!(answer_params)
+    if @answer.user_id === current_user.id
+      add_user_id_to_params
+      @answer.update!(answer_params)
       render status: 200, json: {
         message: "Your answer has been updated."
       }
@@ -30,9 +31,9 @@ class AnswersController < ApplicationController
   end
 
   def destroy
-    add_user_id_to_params
     @answer = Answer.find(params[:id])
-    if @answer.destroy!
+    if @answer.user_id === current_user.id
+      @answer.destroy!
       render status: 200, json: {
         message: "Your answer has been destroyed."
       }
