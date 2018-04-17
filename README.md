@@ -10,6 +10,11 @@
 ## Project Goals
 _My goal was to create a Rails API that would communicate with a separate Angular application._
 
+## Features
+* _User authentication set up with the Devise Token Auth gem_
+* _Cross-Origin Sharing Requests_
+* _Serializers for Question and Answer models that transmit all necessary attributes to the UI_
+
 ## Setup/Installation Requirements
 _This database is hosted [here](http://nameless-oasis-87770.herokuapp.com/)._
 
@@ -32,6 +37,7 @@ _If you have any updates, questions, or suggestions please contact [Margaret] or
 
 ## Technologies Used
 * _Ruby-on-Rails_
+* _ActiveRecord_
 
 ### License
 *This software is licensed under the MIT license.*
