@@ -28,7 +28,7 @@ _To clone locally, run the following commands in Terminal:_
 6. `$ rails db:test:prepare`
 7. `$ rails db:seed`
 8. _This API uses an Angular front end. Visit [this repository](https://github.com/codemargaret/IntervYou-UI.git) and follow the setup instructions there._
-7. `$ rails s` _to start the server._
+9. `$ rails s` _to start the server._
 
 ## Support and contact details
 _If you have any updates, questions, or suggestions please contact [Margaret] or make a contribution._
