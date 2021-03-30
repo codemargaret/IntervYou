@@ -1,6 +1,6 @@
 # _IntervYou Rails API_
 
-#### _A website that allows a user to practice technical interview questions, 02.02.2017_
+#### _An app that allows a user to practice technical interview questions, 02.02.2017_
 
 #### By _**Margaret Berry**_
 
